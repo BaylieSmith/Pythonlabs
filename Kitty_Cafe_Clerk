@@ -11,13 +11,13 @@ print ("Here is todays menu,\n\n" +  menu + "\n" )
 
 coffee = input("What can i get you today?\n\n")
 
-print ("\nExcellent choice! Our " + coffee + " are divine!\n" )
+print ("\nExcellent choice! Our " + (coffee + 's') + " are divine!\n" )
 
 temp = input ("Would you like that hot, iced, or blended?\n\n") 
 
 price = 7
 
-quan = input ("How many " + temp + " " + coffee + " would you like today?\n\n")
+quan = input ("How many " + temp + " " + (coffee + 's' ) + " would you like today?\n\n")
 
 total = int(price) * int(quan)
 
@@ -30,4 +30,5 @@ change = int(tender) - int(total)
 print ("\n\nThanks! Your change is $" + str(change) +".")
 
 
-print ("\nPerfect, "+ quan +" " + temp +" "+ coffee +" coming right up!\n\n")
+print ("\nPerfect, "+ quan +" " + temp +" "+ (coffee + 's') +" coming right up!\n\n")
+
