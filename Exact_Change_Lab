@@ -1,0 +1,29 @@
+def get_coin_name(coin_type, count):
+    if coin_type == "penny":
+        return "penny" if count == 1 else "pennies"
+    else:
+        return coin_type if count == 1 else coin_type + 's'
+
+def calculate_change(amount):    
+    COINS = [
+        ("Dollar", 100),
+        ("Quarter", 25),
+        ("Dime", 10),
+        ("Nickel", 5),
+        ("Penny", 1)
+    ]
+
+    if amount <= 0:
+        print("No change")
+        return
+
+    for coin_name, coin_value in COINS:
+        if amount >= coin_value:
+            num_coins = amount // coin_value
+            amount %= coin_value
+            print(f"{num_coins} {get_coin_name(coin_name, num_coins)}")
+
+if __name__ == "__main__":
+    total_amount = int(input())
+    calculate_change(total_amount)
+    
