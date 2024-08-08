@@ -1,0 +1,33 @@
+print("Welcome to my Kitty Cafe!!!\n\n")
+
+name = input("What is your name? \n\n")
+
+
+print ("\nHello " + name +", thanks for coming by today\n\n")
+
+menu = "Black Coffee, Latte, Mocha, Espresso, Cold Brew"
+
+print ("Here is todays menu,\n\n" +  menu + "\n" )
+
+coffee = input("What can i get you today?\n\n")
+
+print ("\nExcellent choice! Our " + coffee + " are divine!\n" )
+
+temp = input ("Would you like that hot, iced, or blended?\n\n") 
+
+price = 7
+
+quan = input ("How many " + temp + " " + coffee + " would you like today?\n\n")
+
+total = int(price) * int(quan)
+
+print("\n\nAlright "+ name + ", your total today comes up to $" + str(total) + "  c:")
+
+tender = input("\n\n*Hand me some money... How much did you give me?*\n\n$")
+
+change = int(tender) - int(total)
+
+print ("\n\nThanks! Your change is $" + str(change) +".")
+
+
+print ("\nPerfect, "+ quan +" " + temp +" "+ coffee +" coming right up!\n\n")
