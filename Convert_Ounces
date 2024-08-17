@@ -1,0 +1,9 @@
+ounces = int(input())
+
+tons = int(ounces / 32000)
+remaining_pounds = int((ounces % (32000)) / 16)
+remaining_ounces = int((ounces % (32000)) % 16)
+
+print(f'Tons: {tons:}')
+print(f'Pounds: {remaining_pounds:}')
+print(f'Ounces: {remaining_ounces:}')
